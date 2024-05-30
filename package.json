@@ -1,5 +1,5 @@
 {
-  "name": "@layerzerolabs/layerzero-v2",
+  "name": "@fraxfinance/layerzero-v2-upgradeable",
   "version": "2.0.2",
   "private": true,
   "workspaces": [
