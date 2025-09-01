@@ -2,7 +2,7 @@
 
 pragma solidity >=0.8.0;
 
-import { IERC165 } from "@openzeppelin/contracts/utils/introspection/IERC165.sol";
+import { IERC165 } from "@openzeppelin/contracts-4.8.1/utils/introspection/IERC165.sol";
 
 import { SetConfigParam } from "./IMessageLibManager.sol";
 
