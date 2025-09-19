@@ -2,7 +2,7 @@
 
 pragma solidity ^0.8.20;
 
-import { ERC20Upgradeable } from "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol";
+import { ERC20Upgradeable } from "@openzeppelin/contracts-upgradeable-4.8.1/token/ERC20/ERC20Upgradeable.sol";
 import { IOFT, OFTCoreUpgradeable } from "./OFTCoreUpgradeable.sol";
 
 /**

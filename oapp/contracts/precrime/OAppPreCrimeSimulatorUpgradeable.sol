@@ -2,7 +2,7 @@
 
 pragma solidity ^0.8.20;
 
-import { OwnableUpgradeable } from "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol";
+import { OwnableUpgradeable } from "@openzeppelin/contracts-upgradeable-4.8.1/access/OwnableUpgradeable.sol";
 import { IPreCrime } from "./interfaces/IPreCrime.sol";
 import { IOAppPreCrimeSimulator, InboundPacket, Origin } from "./interfaces/IOAppPreCrimeSimulator.sol";
 
