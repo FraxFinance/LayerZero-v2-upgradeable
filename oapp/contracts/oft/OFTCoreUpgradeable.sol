@@ -229,6 +229,13 @@ abstract contract OFTCoreUpgradeable is
         SendParam calldata _sendParam,
         uint256 _amountLD
     ) internal view virtual returns (bytes memory message, bytes memory options) {
+        // Recipient shape check, shared by quoteSend() and every send path:
+        // - the low 160 bits must be nonzero on every route, they decode to address(0) otherwise;
+        // - when the destination peer is a left-padded 20-byte address (an EVM-style chain) the
+        //   recipient must be one too, otherwise the destination would silently truncate it.
+        bytes32 to = _sendParam.to;
+        if (uint160(uint256(to)) == 0) revert InvalidRecipient();
+        if (uint256(to) >> 160 != 0 && uint256(peers(_sendParam.dstEid)) >> 160 == 0) revert InvalidRecipient();
         bool hasCompose;
         // @dev This generated message has the msg.sender encoded into the payload so the remote knows who the caller is.
         (message, hasCompose) = OFTMsgCodec.encode(
@@ -270,7 +277,11 @@ abstract contract OFTCoreUpgradeable is
     ) internal virtual override {
         // @dev The src sending chain doesnt know the address length on this chain (potentially non-evm)
         // Thus everything is bytes32() encoded in flight.
-        address toAddress = _message.sendTo().bytes32ToAddress();
+        // A recipient that is not a left-padded nonzero 20-byte address is rejected rather than
+        // truncated, so the packet stays retryable instead of crediting address(0) or a stranger.
+        bytes32 sendTo = _message.sendTo();
+        if (uint160(uint256(sendTo)) == 0 || uint256(sendTo) >> 160 != 0) revert InvalidRecipient();
+        address toAddress = address(uint160(uint256(sendTo)));
         // @dev Credit the amountLD to the recipient and return the ACTUAL amount the recipient received in local decimals
         uint256 amountReceivedLD = _credit(toAddress, _toLD(_message.amountSD()), _origin.srcEid);
 

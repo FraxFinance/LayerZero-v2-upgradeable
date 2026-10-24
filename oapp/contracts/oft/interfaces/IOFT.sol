@@ -54,6 +54,7 @@ interface IOFT {
     // Custom error messages
     error InvalidLocalDecimals();
     error SlippageExceeded(uint256 amountLD, uint256 minAmountLD);
+    error InvalidRecipient();
 
     // Events
     event OFTSent(
