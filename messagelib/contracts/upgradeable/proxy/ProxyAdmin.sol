@@ -4,7 +4,7 @@
 
 pragma solidity ^0.8.0;
 
-import { Ownable } from "@openzeppelin/contracts-4.8.1/access/Ownable.sol";
+import { Ownable } from "@openzeppelin/contracts/access/Ownable.sol";
 
 import { TransparentUpgradeableProxy } from "./TransparentUpgradeableProxy.sol";
 

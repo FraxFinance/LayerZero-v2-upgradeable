@@ -2,7 +2,7 @@
 
 pragma solidity ^0.8.20;
 
-import { ReentrancyGuardUpgradeable } from "@openzeppelin/contracts-upgradeable-4.8.1/security/ReentrancyGuardUpgradeable.sol";
+import { ReentrancyGuardUpgradeable } from "@openzeppelin/contracts-upgradeable/security/ReentrancyGuardUpgradeable.sol";
 import { Proxied } from "hardhat-deploy/solc_0.8/proxy/Proxied.sol";
 
 import { ILayerZeroEndpointV2, Origin } from "@layerzerolabs/lz-evm-protocol-v2/contracts/interfaces/ILayerZeroEndpointV2.sol";

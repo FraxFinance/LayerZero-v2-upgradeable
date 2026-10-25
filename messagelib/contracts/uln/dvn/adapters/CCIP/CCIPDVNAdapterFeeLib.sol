@@ -3,7 +3,7 @@
 pragma solidity ^0.8.20;
 
 import { Proxied } from "hardhat-deploy/solc_0.8/proxy/Proxied.sol";
-import { OwnableUpgradeable } from "@openzeppelin/contracts-upgradeable-4.8.1/access/OwnableUpgradeable.sol";
+import { OwnableUpgradeable } from "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol";
 import { Client } from "@chainlink/contracts-ccip/src/v0.8/ccip/libraries/Client.sol";
 import { IRouterClient } from "@chainlink/contracts-ccip/src/v0.8/ccip/interfaces/IRouterClient.sol";
 
