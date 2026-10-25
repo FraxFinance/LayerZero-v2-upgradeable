@@ -2,7 +2,7 @@
 
 pragma solidity ^0.8.20;
 
-import { ERC165 } from "@openzeppelin/contracts-4.8.1/utils/introspection/ERC165.sol";
+import { ERC165 } from "@openzeppelin/contracts/utils/introspection/ERC165.sol";
 
 import { IMessageLib, MessageLibType } from "../interfaces/IMessageLib.sol";
 import { Errors } from "../libs/Errors.sol";

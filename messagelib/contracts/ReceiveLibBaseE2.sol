@@ -2,8 +2,8 @@
 
 pragma solidity ^0.8.20;
 
-import { IERC165 } from "@openzeppelin/contracts-4.8.1/utils/introspection/IERC165.sol";
-import { ERC165 } from "@openzeppelin/contracts-4.8.1/utils/introspection/ERC165.sol";
+import { IERC165 } from "@openzeppelin/contracts/utils/introspection/IERC165.sol";
+import { ERC165 } from "@openzeppelin/contracts/utils/introspection/ERC165.sol";
 
 import { ILayerZeroEndpointV2, Origin } from "@layerzerolabs/lz-evm-protocol-v2/contracts/interfaces/ILayerZeroEndpointV2.sol";
 import { IMessageLib, MessageLibType } from "@layerzerolabs/lz-evm-protocol-v2/contracts/interfaces/IMessageLib.sol";

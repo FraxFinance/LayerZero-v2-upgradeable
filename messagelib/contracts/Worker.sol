@@ -2,8 +2,8 @@
 
 pragma solidity ^0.8.20;
 
-import { Pausable } from "@openzeppelin/contracts-4.8.1/security/Pausable.sol";
-import { AccessControl } from "@openzeppelin/contracts-4.8.1/access/AccessControl.sol";
+import { Pausable } from "@openzeppelin/contracts/security/Pausable.sol";
+import { AccessControl } from "@openzeppelin/contracts/access/AccessControl.sol";
 
 import { ISendLib } from "@layerzerolabs/lz-evm-protocol-v2/contracts/interfaces/ISendLib.sol";
 import { Transfer } from "@layerzerolabs/lz-evm-protocol-v2/contracts/libs/Transfer.sol";

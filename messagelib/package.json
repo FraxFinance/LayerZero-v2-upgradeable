@@ -10,8 +10,8 @@
   "dependencies": {
     "@layerzerolabs/lz-evm-protocol-v2": "workspace:^",
     "@layerzerolabs/lz-evm-v1-0.7": "^2.0.1",
-    "@openzeppelin/contracts-4.8.1": "npm:@openzeppelin/contracts@4.8.1",
-    "@openzeppelin/contracts-upgradeable-4.8.1": "npm:@openzeppelin/contracts-upgradeable@4.8.1",
+    "@openzeppelin/contracts": "^4.8.1",
+    "@openzeppelin/contracts-upgradeable": "^4.8.1",
     "solidity-bytes-utils": "^0.8.0"
   },
   "devDependencies": {

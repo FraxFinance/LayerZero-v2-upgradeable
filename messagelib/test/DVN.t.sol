@@ -3,7 +3,7 @@
 pragma solidity ^0.8.0;
 
 import { Test } from "forge-std/Test.sol";
-import { Strings } from "@openzeppelin/contracts-4.8.1/utils/Strings.sol";
+import { Strings } from "@openzeppelin/contracts/utils/Strings.sol";
 import { BytesLib } from "solidity-bytes-utils/contracts/BytesLib.sol";
 
 import { PacketV1Codec } from "@layerzerolabs/lz-evm-protocol-v2/contracts/messagelib/libs/PacketV1Codec.sol";
