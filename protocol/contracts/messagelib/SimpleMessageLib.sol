@@ -2,10 +2,10 @@
 
 pragma solidity ^0.8.20;
 
-import { IERC20 } from "@openzeppelin/contracts-4.8.1/token/ERC20/IERC20.sol";
-import { SafeERC20 } from "@openzeppelin/contracts-4.8.1/token/ERC20/utils/SafeERC20.sol";
-import { ERC165 } from "@openzeppelin/contracts-4.8.1/utils/introspection/ERC165.sol";
-import { Ownable } from "@openzeppelin/contracts-4.8.1/access/Ownable.sol";
+import { IERC20 } from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
+import { SafeERC20 } from "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
+import { ERC165 } from "@openzeppelin/contracts/utils/introspection/ERC165.sol";
+import { Ownable } from "@openzeppelin/contracts/access/Ownable.sol";
 
 import { IMessageLib, MessageLibType } from "../interfaces/IMessageLib.sol";
 import { Packet } from "../interfaces/ISendLib.sol";

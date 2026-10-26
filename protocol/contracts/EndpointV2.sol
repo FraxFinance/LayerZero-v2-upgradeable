@@ -2,7 +2,7 @@
 
 pragma solidity ^0.8.20;
 
-import { IERC20 } from "@openzeppelin/contracts-4.8.1/token/ERC20/IERC20.sol";
+import { IERC20 } from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 
 import { MessagingFee, MessagingParams, MessagingReceipt, Origin, ILayerZeroEndpointV2 } from "./interfaces/ILayerZeroEndpointV2.sol";
 import { ISendLib, Packet } from "./interfaces/ISendLib.sol";

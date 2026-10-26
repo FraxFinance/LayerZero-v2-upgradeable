@@ -15,7 +15,7 @@ import { OFTMsgCodec } from "../contracts/oft/libs/OFTMsgCodec.sol";
 import { OFTComposeMsgCodec } from "../contracts/oft/libs/OFTComposeMsgCodec.sol";
 
 import { IOFT, SendParam, OFTReceipt } from "../contracts/oft/interfaces/IOFT.sol";
-import { IERC20 } from "@openzeppelin/contracts-4.8.1/token/ERC20/extensions/IERC20Metadata.sol";
+import { IERC20 } from "@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol";
 
 import "forge-std/console.sol";
 import { TestHelper, Initializable } from "./TestHelper.sol";

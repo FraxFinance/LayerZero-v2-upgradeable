@@ -6,7 +6,7 @@ import "@layerzerolabs/lz-evm-v1-0.7/contracts/interfaces/ILayerZeroReceiver.sol
 import "@layerzerolabs/lz-evm-v1-0.7/contracts/interfaces/ILayerZeroEndpoint.sol";
 import "@layerzerolabs/lz-evm-v1-0.7/contracts/interfaces/ILayerZeroMessagingLibrary.sol";
 
-import "@openzeppelin/contracts-4.8.1/access/Ownable.sol";
+import "@openzeppelin/contracts/access/Ownable.sol";
 
 contract EndpointV1 is Ownable, ILayerZeroEndpoint {
     uint16 public immutable chainId;

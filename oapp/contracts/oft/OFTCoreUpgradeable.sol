@@ -366,9 +366,14 @@ abstract contract OFTCoreUpgradeable is
      * @dev Internal function to convert an amount from local decimals into shared decimals.
      * @param _amountLD The amount in local decimals.
      * @return amountSD The amount in shared decimals.
+     *
+     * @dev Reverts instead of truncating when the amount does not fit the uint64 shared-decimal field: the same check as
+     * upstream LayerZero's AmountSDOverflowed, without the custom error to keep the largest OFTs under EIP-170.
      */
     function _toSD(uint256 _amountLD) internal view virtual returns (uint64 amountSD) {
-        return uint64(_amountLD / decimalConversionRate);
+        uint256 _amountSD = _amountLD / decimalConversionRate;
+        require(_amountSD <= type(uint64).max);
+        return uint64(_amountSD);
     }
 
     /**

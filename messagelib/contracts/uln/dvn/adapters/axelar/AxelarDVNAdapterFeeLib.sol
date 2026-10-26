@@ -3,7 +3,7 @@
 pragma solidity ^0.8.20;
 
 import { Proxied } from "hardhat-deploy/solc_0.8/proxy/Proxied.sol";
-import { OwnableUpgradeable } from "@openzeppelin/contracts-upgradeable-4.8.1/access/OwnableUpgradeable.sol";
+import { OwnableUpgradeable } from "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol";
 import { IAxelarGasService } from "@axelar-network/axelar-gmp-sdk-solidity/contracts/interfaces/IAxelarGasService.sol";
 import { Transfer } from "@layerzerolabs/lz-evm-protocol-v2/contracts/libs/Transfer.sol";
 

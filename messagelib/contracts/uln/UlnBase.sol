@@ -2,7 +2,7 @@
 
 pragma solidity ^0.8.20;
 
-import { Ownable } from "@openzeppelin/contracts-4.8.1/access/Ownable.sol";
+import { Ownable } from "@openzeppelin/contracts/access/Ownable.sol";
 
 // the formal properties are documented in the setter functions
 struct UlnConfig {

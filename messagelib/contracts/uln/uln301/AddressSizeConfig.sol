@@ -2,7 +2,7 @@
 
 pragma solidity ^0.8.20;
 
-import { Ownable } from "@openzeppelin/contracts-4.8.1/access/Ownable.sol";
+import { Ownable } from "@openzeppelin/contracts/access/Ownable.sol";
 
 abstract contract AddressSizeConfig is Ownable {
     // EndpointV1 is using bytes as address. this map is for address length assertion

@@ -3,9 +3,9 @@
 pragma solidity ^0.8.18;
 
 import { Test } from "forge-std/Test.sol";
-import { DoubleEndedQueue } from "@openzeppelin/contracts-4.8.1/utils/structs/DoubleEndedQueue.sol";
-import { TransparentUpgradeableProxy } from "@openzeppelin/contracts-4.8.1/proxy/transparent/TransparentUpgradeableProxy.sol";
-import { Initializable } from "@openzeppelin/contracts-4.8.1/proxy/utils/Initializable.sol";
+import { DoubleEndedQueue } from "@openzeppelin/contracts/utils/structs/DoubleEndedQueue.sol";
+import { TransparentUpgradeableProxy } from "@openzeppelin/contracts/proxy/transparent/TransparentUpgradeableProxy.sol";
+import { Initializable } from "@openzeppelin/contracts/proxy/utils/Initializable.sol";
 
 import { UlnConfig, SetDefaultUlnConfigParam } from "@layerzerolabs/lz-evm-messagelib-v2/contracts/uln/UlnBase.sol";
 import { SetDefaultExecutorConfigParam, ExecutorConfig } from "@layerzerolabs/lz-evm-messagelib-v2/contracts/SendLibBase.sol";
